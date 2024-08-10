@@ -2,8 +2,11 @@
 
 int main()
 {
-    for (int i = 1; i <= 100; i++)
+    int index = 1;
+
+    while (index <= 100)
     {
-        printf("%d\n", i);
+        printf("%d\n", index);
+        index++;
     }
 }
