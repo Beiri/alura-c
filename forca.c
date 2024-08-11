@@ -6,5 +6,10 @@ int main()
 
     sprintf(palavrasecreta, "MELANCIA");
 
-    printf("%s\n", palavrasecreta);
+    int acertou = 0;
+    int enforcou = 0;
+
+    do
+    {
+    } while (!acertou && !enforcou);
 }
