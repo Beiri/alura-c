@@ -1,10 +1,10 @@
 ## About this Project
 
-This project was created by following the **C: conhecendo a Linguagem das Linguagens** course on [Alura](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-1).
+This project was created by following the [**C: conhecendo a Linguagem das Linguagens**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-1) & [**C: avançando na linguagem**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-2) courses on [Alura](https://www.alura.com.br/).
 
 ### Technologies Used
 
-- **C**
+- [**C**](<https://en.wikipedia.org/wiki/C_(programming_language)>)
 
 ### Project Description
 
