@@ -50,7 +50,7 @@ int main()
 
     printf("Fim de jogo!\n");
     printf("Você acertou em %d tentativas\n", tentativas);
-    printf("Total de pontos: %f\n", pontos);
+    printf("Total de pontos: %.1f\n", pontos);
 
     return 0;
 }
