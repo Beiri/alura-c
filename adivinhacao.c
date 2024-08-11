@@ -4,10 +4,13 @@
 
 int main()
 {
-    // Imprime o cabeçalho do jogo.
-    printf("******************************************\n");
-    printf("* Bem vindo ao nosso jogo de adivinhação *\n");
-    printf("******************************************\n");
+    printf("\n\n");
+    printf(" _   |~  _                          \n");
+    printf("[_]--'--[_]                         \n");
+    printf("|'|\"\"`\"\"|'|        Bem vindo ao \n");
+    printf("| | /^\\ | |     Jogo de Adivihação \n");
+    printf("|_|_|I|_|_|                         \n");
+    printf("\n\n");
 
     int segundos = time(0);
     srand(segundos);
