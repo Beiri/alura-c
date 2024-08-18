@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
+#include <time.h>
 #include "forca.h"
 
 // Variáveis globais
@@ -43,7 +45,29 @@ void desenhaforca()
 
 void escolhepalavra()
 {
-    sprintf(palavrasecreta, "MELANCIA");
+    FILE *f;
+
+    // Se não for rodado no mesmo diretório não irá encontrar o arquivo.
+    f = fopen("palavras.txt", "r");
+
+    if (f == 0)
+    {
+        printf("Desculpe, banco de dados não disponível\n\n");
+        exit(1);
+    }
+
+    int qtddepalavras = 0;
+    fscanf(f, "%d", &qtddepalavras);
+
+    srand(time(0));
+    int randomico = rand() % qtddepalavras;
+
+    for (int i = 0; i <= randomico; i++)
+    {
+        fscanf(f, "%s", palavrasecreta);
+    }
+
+    fclose(f);
 }
 
 int enforcou()
