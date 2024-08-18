@@ -1,6 +1,6 @@
 ## About this Project
 
-This project was created by following the [**C: conhecendo a Linguagem das Linguagens**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-1) & [**C: avançando na linguagem**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-2) courses on [Alura](https://www.alura.com.br/).
+This project was created by following the [**C: conhecendo a Linguagem das Linguagens**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-1), [**C: avançando na linguagem**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-2) and [**C: recursos avançados da linguagem**](https://cursos.alura.com.br/course/introducao-a-programacao-com-c-parte-3) courses on [Alura](https://www.alura.com.br/).
 
 ### Technologies Used
 
