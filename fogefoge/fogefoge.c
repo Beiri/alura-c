@@ -25,17 +25,17 @@ void move(char direcao)
 
     switch (direcao)
     {
-    case 'a':
-        proximoy--;
-        break;
-    case 'd':
+    case DIREITA:
         proximoy++;
         break;
-    case 'w':
-        proximox--;
+    case ESQUERDA:
+        proximoy--;
         break;
-    case 's':
+    case BAIXO:
         proximox++;
+        break;
+    case CIMA:
+        proximox--;
         break;
     }
 
@@ -54,7 +54,7 @@ void move(char direcao)
 int main()
 {
     lemapa(&m);
-    encontramapa(&m, &heroi, '@');
+    encontramapa(&m, &heroi, HEROI);
 
     do
     {
