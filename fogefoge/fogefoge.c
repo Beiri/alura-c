@@ -113,7 +113,18 @@ void move(char direcao)
 
 void explodepilula()
 {
-    printf("explodiu");
+    for (int i = 0; i < 3; i++)
+    {
+        if (ehvalida(&m, heroi.x, heroi.y + i))
+        {
+            if (ehparede(&m, heroi.x, heroi.y + i))
+            {
+                break;
+            }
+
+            m.matriz[heroi.x][heroi.y + i] = VAZIO;
+        }
+    }
 };
 
 int main()
