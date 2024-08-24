@@ -115,6 +115,10 @@ void explodepilula(int x, int y, int qtd)
 {
     if (qtd == 0)
         return;
+    if (!ehvalida(&m, x, y + 1))
+        return;
+    if (ehparede(&m, x, y + 1))
+        return;
 
     m.matriz[heroi.x][heroi.y + 1] = VAZIO;
 
