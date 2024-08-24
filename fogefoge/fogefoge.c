@@ -111,20 +111,14 @@ void move(char direcao)
     heroi.y = proximoy;
 }
 
-void explodepilula()
+void explodepilula(int x, int y, int qtd)
 {
-    for (int i = 0; i < 3; i++)
-    {
-        if (ehvalida(&m, heroi.x, heroi.y + i))
-        {
-            if (ehparede(&m, heroi.x, heroi.y + i))
-            {
-                break;
-            }
+    if (qtd == 0)
+        return;
 
-            m.matriz[heroi.x][heroi.y + i] = VAZIO;
-        }
-    }
+    m.matriz[heroi.x][heroi.y + 1] = VAZIO;
+
+    explodepilula(x, y + 1, qtd - 1);
 };
 
 int main()
@@ -142,7 +136,7 @@ int main()
         move(comando);
 
         if (comando == BOMBA)
-            explodepilula();
+            explodepilula(heroi.x, heroi.y, 3);
 
         fantasmas();
     } while (!acabou());
